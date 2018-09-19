@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:background="@color/neon"
+    tools:context="com.example.zozo.async.MainActivity"
+    android:translationZ="@dimen/abc_action_button_min_width_overflow_material">
+
+    <Button
+        android:layout_width="120dp"
+        android:layout_height="60dp"
+        android:text="Backward"
+        android:id="@+id/backwardBtn"
+        android:background= "@drawable/roundshapebtn"
+        android:textSize="@dimen/abc_dialog_padding_top_material"
+        android:textColor="#ffffff"
+        android:layout_below="@+id/rightBtn"
+        android:layout_alignLeft="@+id/forwardBtn"
+        android:layout_alignStart="@+id/forwardBtn"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Break"
+        android:id="@+id/breakBtn"
+        android:background="#f34848"
+        android:layout_alignBottom="@+id/backwardBtn"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="120dp"
+        android:layout_height="60dp"
+        android:text="Forward"
+        android:id="@+id/forwardBtn"
+        android:background="@drawable/roundshapebtn"
+        android:textColor="#fffefe"
+        android:textSize="@dimen/abc_dialog_padding_top_material"
+        android:layout_above="@+id/leftBtn"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="120dp"
+        android:layout_height="60dp"
+        android:text="Left"
+        android:id="@+id/leftBtn"
+        android:background="@drawable/roundshapebtn"
+        android:textColor="#ffffff"
+        android:textSize="@dimen/abc_dialog_padding_top_material"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/forwardBtn"
+        android:layout_toStartOf="@+id/forwardBtn" />
+
+    <Button
+        android:layout_width="120dp"
+        android:layout_height="60dp"
+        android:text="Right"
+        android:id="@+id/rightBtn"
+        android:background="@drawable/roundshapebtn"
+        android:textColor="#fefefe"
+        android:textSize="@dimen/abc_text_size_medium_material"
+        android:layout_below="@+id/forwardBtn"
+        android:layout_alignLeft="@+id/textView"
+        android:layout_alignStart="@+id/textView" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Results"
+        android:id="@+id/resultsBtn"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textColor="#ffffff"
+        android:background="#00796B" />
+
+    <TextView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:id="@+id/textView"
+        android:textColor="#020202"
+        android:autoText="false"
+        android:textSize="@dimen/abc_dialog_padding_material"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_above="@+id/rightBtn"
+        android:layout_toRightOf="@+id/forwardBtn"
+        android:layout_toEndOf="@+id/forwardBtn" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="RcCar"
+        android:id="@+id/rcView"
+        android:textSize="@dimen/abc_action_button_min_height_material"
+        android:textColor="#00796B"
+        android:textStyle="bold|italic"
+        android:visibility="visible"
+        android:translationZ="@dimen/abc_text_size_title_material_toolbar"
+        android:layout_above="@+id/forwardBtn"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+
+</RelativeLayout>
